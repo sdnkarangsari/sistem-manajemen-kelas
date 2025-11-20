@@ -1,0 +1,208 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: "Nunito", "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* CONTAINER */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CARD CERIA */
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(255, 174, 174, 0.35);
+    border: 3px solid #ffe4e4;
+}
+
+/* =========================== */
+/*       LOGO PERBAIKAN        */
+/* =========================== */
+
+.school-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+
+    /* menyamarkan kotak biru */
+    mix-blend-mode: multiply;
+    filter: brightness(1.15) contrast(1.05);
+
+    border-radius: 14px;     /* sudut bulat → bingkai tidak terlihat */
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* WRAPPER LOGO + JUDUL */
+.header-school {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+/* TITLE */
+.school-info h1 {
+    color: #ff6f61;
+    font-weight: 900;
+    font-size: 22px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.school-info p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 3px;
+    text-align: left;
+}
+
+/* INPUT */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 800;
+    color: #ff6f61;
+    font-size: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ffcccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #fff7f7;
+    transition: 0.25s ease;
+    font-weight: 700;
+}
+
+.input-group input:focus {
+    border-color: #ff9a9e;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 166, 166, 0.35);
+}
+
+/* BUTTON CERIA */
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.25s ease;
+    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.35);
+}
+
+.btn-login:hover {
+    background: #ff5a4c;
+    transform: translateY(-2px);
+}
+
+/* ERROR MESSAGE */
+.error-message {
+    color: #d64545;
+    margin-top: 15px;
+    padding: 10px;
+    background: #ffe1e1;
+    border-radius: 6px;
+    border-left: 4px solid #ff6f61;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* DEMO ACCOUNT */
+.demo-accounts {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ffd6d6;
+}
+
+.demo-accounts h4 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+    font-size: 14.5px;
+    font-weight: 800;
+}
+
+.demo-accounts p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+/* ========================================== */
+/*            MENU KIRI CERIA & TEBAL         */
+/* ========================================== */
+
+.sidebar, .menu, .left-menu {
+    font-family: "Nunito", sans-serif;
+}
+
+.sidebar a, 
+.left-menu a, 
+.menu a,
+.sidebar li, 
+.menu li, 
+.left-menu li {
+    font-size: 19px;
+    font-weight: 900;
+    color: #ff6f61;
+    text-decoration: none;
+    padding: 14px 18px;
+    display: block;
+    border-radius: 12px;
+    transition: 0.25s ease;
+}
+
+.sidebar a:hover,
+.left-menu a:hover,
+.menu a:hover {
+    background: #ffe6e6;
+    color: #ff4d3f;
+    transform: translateX(6px);
+}
+
+/* JUDUL MENU */
+.sidebar-title, 
+.menu-title, 
+.left-menu-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #ff5e57;
+    margin-bottom: 14px;
+    padding-left: 10px;
+}
